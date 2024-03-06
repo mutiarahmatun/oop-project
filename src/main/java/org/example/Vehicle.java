@@ -6,6 +6,7 @@ class Vehicle {
     private String model;
     private int year;
 
+
     public Vehicle(String brand, String model, int year) throws InvalidYearException {
         if (year > Year.now().getValue()) {
             throw new InvalidYearException("Invalid year. Year cannot be in the future.");
@@ -14,6 +15,7 @@ class Vehicle {
         this.model = model;
         this.year = year;
     }
+
 
     public void setBrand(String brand) {
         this.brand = brand;

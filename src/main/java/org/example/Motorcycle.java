@@ -8,7 +8,7 @@ class Motorcycle extends Vehicle {
         this.hasSidecar = hasSidecar;
     }
 
-    public boolean hasSidecar() {
+    public boolean isHasSidecar() {
         return hasSidecar;
     }
 
